@@ -337,3 +337,17 @@ a#contact_btn span::after {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+/* footer */
+#footer {
+    height: 40px;
+    text-align: center;
+}
+#footer p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #2B2B2B;
+    font-family: "Myriad Pro", "myriad-pro", Tahoma, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 12px;
+}
