@@ -233,3 +233,47 @@ a#header_logo {
     top: 0;
     z-index: -1;
 }
+/* shop info */
+#shop_info {
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+}
+#shop_info .inner{
+    padding: 80px 0;
+}
+#shop_info .shop_info_contents {
+    display: block;
+    width: 960px;
+    margin: 40px auto;
+    color: #2B2B2B;
+}
+#shop_info .shop_info_contents::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#shop_info .shop_info_contents img {
+    display: block;
+    width: 480px;
+    float: left;
+}
+#shop_info .shop_info_contents dl {
+    display: block;
+    width: 432px;
+    float: right;
+    font-size: 16px;
+    line-height: 22px;
+}
+#shop_info .shop_info_contents dl dt {
+    float: left;
+    width: 80px;
+    margin-left: 40px;
+}
+#shop_info .shop_info_contents dl dd {
+    width: 311px;
+    margin-left: 120px;
+    margin-bottom: 12px;
+    border-left: 1px solid #A0A0A0;
+    padding-left: 16px;
+}
