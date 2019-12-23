@@ -2,7 +2,7 @@
 @import url(../css/html5reset-1.6.1.css); /*reset css*/
 
 /* common */
-.body {
+body {
     position: relative;
     z-index: -3;
 }
@@ -210,10 +210,6 @@ a#header_logo {
     padding-top: 80px;
     padding-bottom: 40px;
 }
-#florist .inner {
-    position: absolute;
-    z-index: 0;
-}
 #florist .florist_contents {
     display: block;
     width: 960px;
@@ -228,6 +224,22 @@ a#header_logo {
     letter-spacing: normal; /* 文字間を元に戻す */
     white-space: normal; /* 自動で折り返し(元に戻す) */
     vertical-align: top; /* 高さ合わせ*/
+}
+#florist .florist_content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    color: #333333;
+    margin-top: 12px;
+}
+#florist .florist_content p {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Myriad Pro", "myriad-pro", Tahoma, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2B2B2B;
 }
 #florist .florist_top {
     display: block;
