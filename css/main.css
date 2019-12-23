@@ -69,8 +69,30 @@ a#header_logo {
     color: #FFFFFF;
     margin-top: 19px;
 }
+/* Fixed */
+#header.fixed {
+    margin-top: 0;
+    top: 0;
+    position: fixed;
+    height: 80px;
+    background: #EDEDED;
+/*fadein*/
+    animation: fadeIn 1s ease 0s 1 normal;
+    -webkit-animation: fadeIn 1s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1}
+}
 #global_nav {
     display: none;
+}
+#header.fixed a#header_logo {
+    color: #A0A0A0;
 }
 
 /* top */
