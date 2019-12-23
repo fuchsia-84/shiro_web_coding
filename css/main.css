@@ -57,6 +57,7 @@ body {
     width: 960px;
     height: auto;
     margin: 0 auto;
+    position: relative;
 }
 a#header_logo {
     display: block;
@@ -69,6 +70,43 @@ a#header_logo {
     color: #FFFFFF;
     margin-top: 19px;
 }
+#header #nav_toggle {
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 19px;
+    top: 22px;
+    right: 0;
+    cursor: pointer;
+}
+#header #nav_toggle div {
+    width: 100%;
+    position: relative;
+}
+#header #nav_toggle div span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    background: #FFFFFF;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+#header #nav_toggle div span:nth-child(1) {
+    top: 0;
+}
+#header #nav_toggle div span:nth-child(2) {
+    top: 9px;
+}
+#header #nav_toggle div span:nth-child(3) {
+    top: 18px;
+}
+#global_nav {
+    display: none;
+}
+
 /* Fixed */
 #header.fixed {
     margin-top: 0;
@@ -88,13 +126,33 @@ a#header_logo {
     0% {opacity: 0;}
     100% {opacity: 1}
 }
-#global_nav {
-    display: none;
-}
 #header.fixed a#header_logo {
     color: #A0A0A0;
 }
-
+#header.fixed #nav_toggle {
+    top: 15px;
+}
+#header.fixed #nav_toggle div span {
+    background: #A0A0A0;
+}
+/* Open */
+/* #nav_toggle 切り替えアニメーション */
+#header.open #nav_toggle span:nth-child(1) {
+    top: 9px;
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
+#header.open #nav_toggle span:nth-child(2) {
+    width: 0;
+    left: 50%;
+}
+#header.open #nav_toggle span:nth-child(3) {
+    top: 9px;
+    -webkit-transform: rotate(-315deg);
+    -moz-transform: rotate(-315deg);
+    transform: rotate(-315deg);
+}
 /* top */
 #top {
     width: 100%;
