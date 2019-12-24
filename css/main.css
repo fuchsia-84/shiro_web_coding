@@ -112,7 +112,7 @@ a#header_logo {
 }
 /* global nav */
 #header #global_nav {
-    display: block;
+    display: none;
     width: 100%;
     height: 100vh;
     position: absolute;
