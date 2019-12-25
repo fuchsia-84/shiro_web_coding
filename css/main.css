@@ -419,12 +419,12 @@ a#header_logo {
         padding-bottom: 20px;
     }
     #work .work_contents {
-        white-space: nowrap;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         width: calc(100% - 40px);
         margin: 24px 20px 0;
         display: flex;
+        white-space: nowrap;
     }
     #work .work_contents::-webkit-scrollbar {
         height: 5px;
@@ -440,17 +440,16 @@ a#header_logo {
     }
     #work .work_contents .work_content {
         display: block;
-        width: 420px;
+        min-width: 80%;
         margin-right: 20px;
-        position: static;
     }
     #work .work_contents .work_content img {
-        width: 420px;
+        width: 100%;
         height: 200px;
         margin: 0;
     }
     #work .work_contents .work_content .work_content_dis {
-        width: 420px;
+        width: 100%;
         margin: 0 0 20px;
         white-space: normal;
     }
@@ -531,12 +530,12 @@ a#header_logo {
         background: #EDEDED;
     }
     #florist .florist_contents {
-        white-space: nowrap;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         width: calc(100% - 40px);
         margin: 40px 20px 0;
         display: flex;
+        white-space: nowrap;
     }
     #florist .florist_contents::-webkit-scrollbar {
         height: 5px;
@@ -552,12 +551,12 @@ a#header_logo {
     }
     #florist .florist_content {
         display: block;
-        width: 420px;
+        min-width: 80%;
         margin-right: 20px;
         margin-bottom: 20px;
     }
     #florist .florist_content img {
-        width: 420px;
+        width: 100%;
     }
     #florist .florist_top {
         display: none;
