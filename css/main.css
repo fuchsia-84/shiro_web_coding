@@ -131,6 +131,16 @@ a#header_logo {
     a#header_logo {
         margin-top: 19px;
         margin-left: 20px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #header {
+        margin-top: 0;
+    }
+    a#header_logo {
+        font-size: 28px;
+        line-height: 44px;
     }
 }
 /* global nav */
