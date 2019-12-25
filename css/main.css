@@ -383,7 +383,6 @@ a#header_logo {
 @media screen and (max-width: 992px) {
     #work .inner {
         width: 100%;
-        padding-top: 40px;
         padding-bottom: 80px;
     }
     #work .work_contents {
@@ -416,6 +415,7 @@ a#header_logo {
 }
 @media screen and (max-width: 768px) {
     #work .inner {
+        padding-top: 40px;
         padding-bottom: 20px;
     }
     #work .work_contents {
@@ -494,9 +494,6 @@ a#header_logo {
     z-index: -1;
 }
 @media screen and (max-width: 992px) {
-    #florist {
-        padding-top: 40px;
-    }
     #florist .florist_contents {
         width: 100%;
         margin: 40px 0 0;
@@ -517,6 +514,7 @@ a#header_logo {
 }
 @media screen and (max-width: 768px) {
     #florist {
+        padding-top: 40px;
         padding-bottom: 20px;
         background: #EDEDED;
     }
@@ -588,7 +586,6 @@ a#header_logo {
 @media screen and (max-width: 992px) {
     #shop_info .inner {
         width: 100%;
-        padding: 40px 0 0;
     }
     #shop_info .shop_info_contents {
         width: 100%;
@@ -618,6 +615,9 @@ a#header_logo {
     }
 }
 @media screen and (max-width: 768px) {
+    #shop_info .inner {
+        padding: 40px 0 0;
+    }
     #shop_info .shop_info_contents {
         width: calc(100% - 40px);
         margin: 40px auto;
