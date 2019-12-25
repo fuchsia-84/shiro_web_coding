@@ -306,6 +306,32 @@ a#header_logo {
     top: 560px;
     z-index: 1;
 }
+@media screen and (max-width: 992px) {
+    #concept .concept_img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover; /* not for IE*/
+        left: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    #concept .concept_img {
+        width: calc(100% - 40px);
+        top: 245px;
+        left: 20px;
+    }
+    #concept .inner {
+        padding-top: 40px;
+        padding-bottom: 474px; /* todo fix*/
+    }
+    #concept .concept_under {
+        height: 150px;
+        background-color: #EDEDED;
+        position: absolute;
+        top: 540px;
+        z-index: 1;
+    }
+}
 /* work */
 #work {
     display: block;
