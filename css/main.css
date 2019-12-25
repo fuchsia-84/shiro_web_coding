@@ -209,15 +209,6 @@ a#header_logo {
     -moz-transform: rotate(-315deg);
     transform: rotate(-315deg);
 }
-/* #global_nav スライドアニメーション */
-/*
-#header.open #global_nav {
-    -moz-transform: translateY(1000px);
-    -webkit-transform: translateY(1000px);
-    transform: translateY(1000px);
-    visibility: visible;
-}
-*/
 /* top */
 #top {
     width: 100%;
