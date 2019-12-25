@@ -110,6 +110,16 @@ a#header_logo {
 #header #nav_toggle div span:nth-child(3) {
     top: 18px;
 }
+@media screen and (max-width: 992px) {
+    #header .header_contents {
+        width: calc(100% - 40px);
+        left: 0;
+    }
+    a#header_logo {
+        margin-top: 19px;
+        margin-left: 20px;
+    }
+}
 /* global nav */
 #header #global_nav {
     display: none;
