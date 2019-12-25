@@ -704,6 +704,9 @@ a#contact_btn span::after {
         padding-top: 40px;
         padding-bottom: 64px;
     }
+    a#contact_btn {
+        width: calc(100% - 40px);
+    }
 }
 /* footer */
 #footer {
