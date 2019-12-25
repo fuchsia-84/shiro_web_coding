@@ -277,35 +277,15 @@ a#header_logo {
     width: 100%;
     max-width: 960px;
     margin-top: 40px;
-    letter-spacing: -1em; /* 文字間を詰める */
-    white-space: nowrap; /* 自動で折り返ししない */
 }
-#work .work_content_l {
-    display: inline-block;
-    width: 50%;
-    letter-spacing: normal; /* 文字間を元に戻す */
-    white-space: normal; /* 自動で折り返し(元に戻す) */
-    vertical-align: top; /* 高さ合わせ*/
-    position: relative;
-}
-#work .work_content_r {
-    display: inline-block;
-    width: 50%;
-    letter-spacing: normal; /* 文字間を元に戻す */
-    white-space: normal; /* 自動で折り返し(元に戻す) */
-    vertical-align: top; /* 高さ合わせ*/
+#work .work_contents::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 #work .work_content {
     display: block;
     width: 420px;
-}
-#work .work_content_l .work_content {
-    margin-bottom: 80px;
-    float: left;
-}
-#work .work_content_r .work_content {
-    margin-top: 120px;
-    float: right;
 }
 #work .work_content_dis h1 {
     font-family: 'Poppins', sans-serif;
@@ -322,6 +302,14 @@ a#header_logo {
     font-weight: 400;
     font-style: normal;
     color: #2B2B2B;
+}
+#work .work_contents .work_content:nth-child(odd) {
+    float: left;
+    margin-bottom: 80px;
+}
+#work .work_contents .work_content:nth-child(even) {
+    float: right;
+    margin-top: 120px;
 }
 /* florist */
 #florist {
