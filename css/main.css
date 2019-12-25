@@ -493,6 +493,54 @@ a#header_logo {
     top: 0;
     z-index: -1;
 }
+@media screen and (max-width: 992px) {
+    #florist {
+        padding-top: 40px;
+    }
+    #florist .florist_contents {
+        width: 100%;
+        margin: 40px 0 0;
+        letter-spacing: -1em; /* 文字間を詰める */
+        white-space: nowrap; /* 自動で折り返ししない */
+    }
+    #florist .florist_content {
+        display: inline-block;
+        width: 33.33%;
+        margin-right: 0;
+        letter-spacing: normal; /* 文字間を元に戻す */
+        white-space: normal; /* 自動で折り返し(元に戻す) */
+        vertical-align: top;
+    }
+    #florist .florist_content img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #florist {
+        padding-bottom: 20px;
+        background: #EDEDED;
+    }
+    #florist .florist_contents {
+        white-space: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        width: calc(100% - 40px);
+        margin: 40px 20px 0;
+        display: flex;
+    }
+    #florist .florist_content {
+        display: block;
+        width: 420px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    #florist .florist_content img {
+        width: 420px;
+    }
+    #florist .florist_top {
+        display: none;
+    }
+}
 /* shop info */
 #shop_info {
     display: block;
