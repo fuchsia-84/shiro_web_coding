@@ -14,10 +14,11 @@ $(function() {
         // Global Nav
         if ( $('#header').hasClass('open') ) {
             $('#global_nav').slideDown();
-            $('#global_nav').css({display: block})
+            $('#global_nav').css('display','block');
         } else {
-            $('#global_nav').slideUp();
-            $('#global_nav').css({display: none})
+            $('#global_nav').slideUp(function() {
+                $('#global_nav').css('display','none');
+            });
         }
     });
     // Global Nav Links
