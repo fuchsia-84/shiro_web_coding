@@ -426,6 +426,18 @@ a#header_logo {
         margin: 24px 20px 0;
         display: flex;
     }
+    #work .work_contents::-webkit-scrollbar {
+        height: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: #EDEDED;
+        
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #A0A0A0;
+    }
     #work .work_contents .work_content {
         display: block;
         width: 420px;
@@ -525,6 +537,18 @@ a#header_logo {
         width: calc(100% - 40px);
         margin: 40px 20px 0;
         display: flex;
+    }
+    #florist .florist_contents::-webkit-scrollbar {
+        height: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: #EDEDED;
+        
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #A0A0A0;
     }
     #florist .florist_content {
         display: block;
