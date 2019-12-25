@@ -43,7 +43,20 @@ body {
     font-style: normal;
     margin-top: 24px;
 }
-
+@media screen and (max-width: 992px) {
+    .content_title {
+        width: calc(100% - 40px);
+    }
+}
+@media screen and (max-width: 768px) {
+    .content_title h1 {
+        font-size: 28px;
+    }
+    .content_title p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
 /* header */
 #header {
     width: 100%;
