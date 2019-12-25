@@ -226,11 +226,12 @@ a#header_logo {
 }
 #top_logo {
     display: block;
-    width: 258px;
+    width: 100%;
     height: auto;
     position: absolute;
     top: 240px;
-    left: calc((100% - 258px)*0.5);
+    left: 0;
+    text-align: center;
 }
 #top_logo h1 {
     font-family: "Myriad Pro", "myriad-pro", Tahoma, Verdana, sans-serif;
@@ -243,7 +244,26 @@ a#header_logo {
     font-weight: 400;
     font-size: 16px;
     line-height: 17px;
-    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    #top {
+        height: 355px;
+        background-position: center;
+    }
+    #top .inner {
+        height: 355px;
+    }
+    #top_logo {
+        top: 150px;
+    }
+    #top_logo h1 {
+        font-size: 64px;
+        line-height: 64px;
+    }
+    #top_logo p {
+        font-size: 14px;
+        line-height: 15px;
+    }
 }
 
 /* concept */
