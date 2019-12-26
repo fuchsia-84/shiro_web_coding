@@ -16,6 +16,9 @@ body {
     clear: both;
     display: block;
 }
+.br_pc {
+    display: block;
+}
 .content_title {
     display: block;
     width: 960px;
@@ -53,8 +56,12 @@ body {
         font-size: 28px;
     }
     .content_title p {
+        text-align: left;
         font-size: 14px;
         line-height: 25px;
+    }
+    .br_pc {
+        display: none;
     }
 }
 /* header */
