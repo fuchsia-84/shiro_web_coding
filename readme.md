@@ -12,7 +12,7 @@ Web上で配布された制作課題を元に、<u>**お花屋さんの仮想LP*
 
 ### 課題元
 
-- [コーディング練習用のデザイン¥~お花屋さんのLP編¥~](https://note.com/tmy_schaf/n/n49a9b727c5b1)
+- [コーディング練習用のデザイン-お花屋さんのLP編-](https://note.com/tmy_schaf/n/n49a9b727c5b1)
 - 制作者さまTwitter: [あかね@omsss22 さん](https://twitter.com/omsss22)
 
 ## 成果物
