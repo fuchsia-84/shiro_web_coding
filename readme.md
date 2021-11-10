@@ -19,6 +19,8 @@ Web上で配布された制作課題を元に、<u>**お花屋さんの仮想LP*
 
 - <u>**レスポンシブ対応**</u>: PC版・タブレット版・SP版と、画面幅に対応してレイアウトが変化します。
 
+![shiro_responsive](https://user-images.githubusercontent.com/46129202/141027779-b5273a00-c116-427a-b15d-aa9b170ec1e3.png)
+
 ## 開発環境
 
 - Mac Book Air
