@@ -463,9 +463,11 @@ header.fixed {
     font-size: 1.25rem;
     line-height: 1.5rem;
     color: #2B2B2B;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .btn span {
     color: #707070;
+    transition: color 0.3s ease;
 }
 .btn:hover {
     color:white;
@@ -520,6 +522,7 @@ footer {
     position: fixed;
     right: 50px;
     bottom: 100px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .page_top_btn i {
     font-size: 2.4rem;
