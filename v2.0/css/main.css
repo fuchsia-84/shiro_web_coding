@@ -3,14 +3,14 @@
 
 /* base */
 html {
-    font-size: 48px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.46;
     letter-spacing: 0;
 }
 body {
     font-family: myriad-pro, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 0.33rem;
+    font-size: 1.0rem;
     font-style: normal;
     text-align: center;
     display: flex;
@@ -41,14 +41,14 @@ h1, h2 {
     color: #333;
 }
 h2 {
-    font-size: 0.5rem;
+    font-size: 1.5rem;
     line-height: 1.67;
 }
 p {
     color: #2B2B2B;
 }
 .section_title {
-    font-size: 0.75rem;
+    font-size: 2.25rem;
 }
 .section_title::after {
     display: block;
@@ -56,10 +56,10 @@ p {
     width: 40px;
     height: 1px;
     background-color: #333;
-    margin: 0.5rem auto 1.5rem;
+    margin: 1.5rem auto 4.5rem;
 }
 .logo {
-    font-size: 0.75rem;
+    font-size: 2.25rem;
     line-height: 1.0;
     text-decoration: none;
     color: white;
@@ -126,23 +126,23 @@ header .inner {
     letter-spacing: 0;
 }
 .top .inner .title p {
-    font-size: 2.5rem;
+    font-size: 7.5rem;
     line-height: 1.0;
     color: white;
 }
 .top .inner .title span {
-    font-size: 0.33rem;
+    font-size: 1.0rem;
     line-height: 1.0;
 }
 .top .inner .title span::before, .top .inner .title span::after {
     display: inline-block;
     content: '';
-    width: 0.25rem;
+    width: 0.75rem;
     height: 2px;
     font-size: 0;
     background-color: white;
     vertical-align: middle;
-    margin: 0 8px;
+    margin: 0 0.5rem;
 }
 
 /* concept */
@@ -206,7 +206,7 @@ header .inner {
     object-fit: cover;
 }
 .work .list .item .content {
-    margin-top: 0.33rem;
+    margin-top: 1.0rem;
 }
 .work .list .item p {
     margin-bottom: 0;
@@ -264,10 +264,10 @@ header .inner {
 .info .wrapper .container dl {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    row-gap: 0.25rem;
-    column-gap: 0.33rem;
+    row-gap: 0.75rem;
+    column-gap: 1.0rem;
     text-align: left;
-    padding: 0.67rem 0.833rem;
+    padding: 2.0rem 2.5rem;
     color: #2B2B2B;
 }
 .info .wrapper .container dl dt {
@@ -292,7 +292,7 @@ header .inner {
 .btn {
     display: flex;
     flex-wrap: nowrap;
-    column-gap: 0.5rem;
+    column-gap: 1.5rem;
     justify-content: center;
     align-items: center;
     width: 360px;
@@ -301,8 +301,8 @@ header .inner {
     border: 1px solid #A0A0A0;
     cursor: pointer;
     text-decoration: none;
-    font-size: 0.42rem;
-    line-height: 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     color: #2B2B2B;
 }
 .btn span {
@@ -345,7 +345,7 @@ footer {
     bottom: 100px;
 }
 .page_top_btn i {
-    font-size: 0.8rem;
+    font-size: 2.4rem;
 }
 .page_top_btn:hover {
     color:white;
