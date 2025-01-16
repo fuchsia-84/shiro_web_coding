@@ -87,14 +87,6 @@ p {
 .toggle span:nth-of-type(3) {
     top: 32px;
 }
-/* Material Icon */
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
 
 /* header */
 header {
@@ -332,4 +324,30 @@ footer {
     height: 40px;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+/* page top button */
+.page_top_btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    aspect-ratio: 1;
+    background-color: white;
+    border: 1px solid #A0A0A0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #707070;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+}
+.page_top_btn i {
+    font-size: 0.8rem;
+}
+.page_top_btn:hover {
+    color:white;
+    background-color: #A0A0A0;
 }
