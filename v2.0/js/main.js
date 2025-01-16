@@ -24,22 +24,15 @@ $(function() {
             $header.removeClass('fixed');
         }
     });
+
+    // Global Navigation Links
+    $('#nav li a').on('click', function(event){
+        $('.toggle').trigger('click');
+    });
+
     // Toggle Button Clicked
     $('.toggle').click(function(){
         $header.toggleClass('open');
-        // Global Navigation
-        if ( $('#header').hasClass('open') ) {
-            $('.nav').slideDown();
-            $('.nav').css('display','block');
-        } else {
-            $('.nav').slideUp(function() {
-                $('.nav').css('display','none');
-            });
-        }
-    });
-    // Global Navigation Links
-    $('.nav li a').on('click', function(event){
-        $('.toggle').trigger('click');
     });
 
     // Header Fixed

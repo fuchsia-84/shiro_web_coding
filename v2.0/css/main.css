@@ -17,6 +17,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     background-color: white;
+    min-width: 300px;
 }
 @media screen and (max-width: 768px) {
     html {
@@ -106,6 +107,7 @@ p {
     background-color: white;
     position: absolute;
     right: 8px;
+    transition: 1.0s ease;
 }
 .toggle span:nth-of-type(1) {
     top: 16px;
@@ -142,6 +144,8 @@ header .inner {
     height: 64px;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    position: relative;
 }
 header.fixed {
     background-color: rgb(51,51,51,0.3);
@@ -149,6 +153,97 @@ header.fixed {
     animation: fadein 1s ease 0s 1 normal;
     -webkit-animation: fadein 1s ease 0s 1 normal;
 }
+header.open .toggle span:nth-of-type(1) {
+    top: 24px;
+    transform: rotate(315deg);
+}
+header.open .toggle span:nth-of-type(2) {
+    width: 0;
+    right: 50%;
+}
+header.open .toggle span:nth-of-type(3) {
+    top: 24px;
+    transform: rotate(-315deg);
+}
+
+/* global navigation */
+header #nav {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    row-gap: 2.0rem;
+    position: absolute;
+    top: -1000px;
+    left: 10%;
+    z-index: 77;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 60px 100px;
+    opacity: 0;
+    transition: 1.0s ease;
+}
+header.open #nav {
+    top: 64px;
+    opacity: 1;
+}
+header #nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+header #nav li a {
+    font-size: 1.2rem;
+    line-height: 1.0em;
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+    position: relative;
+}
+header #nav li a::after {
+    display: block;
+    visibility: hidden;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header #nav li a:hover::after {
+    visibility: visible;
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    header #nav {
+        width: calc(100% - 20px);
+        left: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    header #nav {
+        width: 70%;
+        height: calc(100vh - 64px);
+        max-height: 100vh;
+        min-width: 300px;
+        min-height: 500px;
+        left: auto;
+        right: -1000px;
+        top: 64px;
+        padding: 30vh 20px 50vh;
+        background-color: rgba(255, 255, 255);
+    }
+    header #nav li {
+        justify-content: right;
+        text-align: right;
+    }
+    header.open #nav {
+        right: -20px;
+    }
+}
+
 
 /* top */
 .top {
