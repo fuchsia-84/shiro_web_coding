@@ -323,3 +323,13 @@ header .inner {
 .btn:hover span {
     color: white;
 }
+
+/* footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
