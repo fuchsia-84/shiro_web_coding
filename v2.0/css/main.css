@@ -18,6 +18,16 @@ body {
     justify-content: center;
     background-color: white;
 }
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+}
 
 /* common */
 .clearfix::after {
@@ -31,6 +41,25 @@ body {
 }
 .wrapper {
     padding: 80px 0 100px;
+}
+@media screen and (max-width: 1024px) {
+    .inner, .wrapper {
+        width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+    }
+    .br_pc_tab {
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    .br_pc_tab {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .br_sp {
+        display: block;
+    }
 }
 .wrapper p {
     margin-bottom: 40px;
@@ -144,6 +173,16 @@ header .inner {
     vertical-align: middle;
     margin: 0 0.5rem;
 }
+@media screen and (max-width: 600px) {
+    .top {
+        height: 100vh;
+        min-height: 400px;
+    }
+    .top .inner {
+        height: 100vh;
+        min-height: 400px;
+    }
+}
 
 /* concept */
 .concept {
@@ -211,6 +250,43 @@ header .inner {
 .work .list .item p {
     margin-bottom: 0;
 }
+@media screen and (max-width: 768px) {
+    .work .wrapper {
+        width: 65%;
+    }
+    .work .wrapper .list {
+        display: flex;
+        flex-wrap: nowrap;
+        column-gap: 1.0rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* for iOS scroll */
+
+        /* To Do: custom scroll bar design. */
+    }
+    .work .wrapper .list .item {
+        flex: 0 0 auto;
+        width: 100%;
+        padding-bottom: 1.5rem;
+    }
+    .work .wrapper .list .item p {
+        text-align: left;
+    }
+    .work .list .item {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+    .work .wrapper .list img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 600px) {
+    .work .wrapper {
+        width: calc(100% - 20px);
+    }
+}
 
 /* florist */
 .florist {
@@ -239,6 +315,47 @@ header .inner {
 }
 .florist .wrapper .list .item p {
     margin-bottom: 0;
+}
+@media screen and (max-width: 1024px) {
+    .florist .wrapper {
+        width: 65%;
+    }
+    .florist .wrapper .list {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 0;
+        row-gap: 1.5rem;
+        text-align: center;
+    }
+    .florist .wrapper .list img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 768px) {
+    .florist .wrapper .list {
+        display: flex;
+        flex-wrap: nowrap;
+        column-gap: 1.0rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* for iOS scroll */
+
+        /* To Do: custom scroll bar design. */
+    }
+    .florist .wrapper .list .item {
+        flex: 0 0 auto;
+        width: 100%;
+        padding-bottom: 1.5rem;
+    }
+    .florist .wrapper .list .item p {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 600px) {
+    .florist .wrapper {
+        width: calc(100% - 20px);
+    }
 }
 
 /* info */
@@ -273,6 +390,27 @@ header .inner {
 .info .wrapper .container dl dt {
     border-right: 1px solid #A0A0A0;
 
+}
+@media screen and (max-width: 1024px) {
+    .info .wrapper {
+        width: 65%;
+    }
+    .info .wrapper .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 0;
+        row-gap: 1.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .info .wrapper .container dl {
+        padding: 1.0rem 1.5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .info .wrapper {
+        width: calc(100% - 20px);
+    }
 }
 
 /* contact */
@@ -315,6 +453,24 @@ header .inner {
 .btn:hover span {
     color: white;
 }
+@media screen and (max-width: 1024px) {
+    .btn {
+        width: 240px;
+        height: 60px;
+        font-size: 1.0rem;
+        column-gap: 1.2em;
+        line-height: 1.2;
+    }
+}
+@media screen and (max-width: 768px) {
+    .btn {
+        width: 180px;
+        height: 50px;
+        font-size: 1.0rem;
+        column-gap: 1.0em;
+        line-height: 1.0em;
+    }
+}
 
 /* footer */
 footer {
@@ -350,4 +506,10 @@ footer {
 .page_top_btn:hover {
     color:white;
     background-color: #A0A0A0;
+}
+@media screen and (max-width: 600px) {
+    .page_top_btn {
+        right: 20px;
+        bottom: 60px;
+    }
 }
